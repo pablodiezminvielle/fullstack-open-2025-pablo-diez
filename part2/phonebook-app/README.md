@@ -1,12 +1,35 @@
-# React + Vite
+# 📞 Phonebook App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple full-stack React + Node.js application to manage contacts.  
+Users can add, delete, update and filter people with their phone numbers.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Add new contacts with name and number.
+- Prevent duplicate entries and allow updates.
+- Delete contacts with confirmation.
+- Filter contacts by name in real-time.
+- Show success and error notifications.
+- Connects to a backend REST API (built with Node.js or Express).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖥️ Frontend Tech Stack
+
+- React
+- Axios
+- CSS for styling
+- React hooks (`useState`, `useEffect`)
+- Custom components and modular architecture
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/phonebook-app.git
+cd phonebook-app
