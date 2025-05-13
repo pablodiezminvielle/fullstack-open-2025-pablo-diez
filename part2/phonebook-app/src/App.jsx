@@ -12,7 +12,7 @@ const App = () => {
   const [filter, setFilter] = useState('')
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
-
+  
 
 
   //1. Usar useEffect para cargar datos
@@ -78,8 +78,12 @@ const App = () => {
         }, 5000);
       })
       .catch(error => {
-        console.error(error);
-        // si querés, podés también mostrar un mensaje de error con setErrorMessage(...)
+        console.error('Error adding person:', error);
+        const errorMsg = error.response?.data?.error || 'Something went wrong';
+        setErrorMessage(errorMsg);
+        setTimeout(() => {
+          setErrorMessage(null);
+        }, 5000);
       });
 
     }
